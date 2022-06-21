@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/logo.css">
 </head>
-<body class="bg-secondary">
-    <div class="container-fluid text-light position-relative">
+<body class="bg-secondary p-2">
+    <div class="container-fluid text-light position-relative d-grid gap-3">
       
         <div class="container-fluid">
         <nav class="navbar navbar-expand-sm navbar-dark">
@@ -42,7 +42,7 @@
               Menu
             </button>
             <div>
-            <div class="collapse navbar-collapse mt-3" id="navbarTogglerDemo02">
+            <div class="collapse navbar-collapse mt-3 mt-sm-0" id="navbarTogglerDemo02">
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search Artwork" aria-label="Search">
                 <button class="btn btn-outline-warning" type="submit">Search</button>
@@ -53,7 +53,7 @@
           </nav>
         </div>
         
-        <div class="container p-2 mt-3 bg-dark">
+        <div class="container p-2 bg-dark rounded-3">
             <div class="card-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <h4>Your last art.</h4>
@@ -61,7 +61,7 @@
                     <img src="images/PxPaintCanvas.png" class="img-fluid rounded-start" alt="...">
                   </div>
                   <div class="col-4">
-                    <div class="card-body mt-4">
+                    <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some text.</p>
                       <p class="card-text"><small class="text-muted">Last drawn 3 mins ago.</small></p>
@@ -72,25 +72,29 @@
               </div>
         </div>
 
-        <div class="container p-2 mt-3 bg-dark">
+        <div class="container p-2 bg-dark rounded-3">
             <h4>Achievements</h4>
-            <div class="row style="max-width: 540px;">
-                <div class="col-7">
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <div class="row">
+                <div class="col-7 col-lg-5">
                     <img src="images/point.png" alt="">
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-lg-5">
                   <h4>Point System</h4>
                   <br>
                   <h6>Some point</h6>
                   <h6>You are doing a great job!</h6>
                 </div>
+              </div>
+              </div>
             </div>
         </div>
 
-        <div class="container p-2 mt-2 bg-dark">
+        <div class="container p-2 bg-dark rounded-3">
             <h4>Best submissions of the month.</h4>
-            <div class="row row-cols-1 row-cols-md-2 g-2">
-                <div class="col-6">
+            <div class="row g-2">
+                <div class="col-4 col-lg-2">
                   <div class="card bg-dark style="max-width: 540px;">
                     <img src="images/PxPaintCanvas.png" class="card-img-top w-100" alt="...">
                     <div class="card-body">
@@ -99,7 +103,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-4 col-lg-2">
                   <div class="card bg-dark style="max-width: 540px;">
                     <img src="images/PxPaintCanvas.png" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -112,7 +116,8 @@
         </div>
     </div>
 
-    <button class="btn btn-outline-warning bg-light position-fixed col-4 col-sm-2 bottom-0 end-0 mx-5 mb-5 fw-bold border-3 text-black">Let's Draw!</button>
+    <button class="btn btn-outline-warning bg-black position-fixed col-4 col-md-3 col-lg-2 bottom-0 end-0 mx-5 mb-5 fw-bold 
+    border-3 text-light opacity-75">Let's Draw!</button>
     <footer class="bottom-0 text-center mx-2 my-2">
         <a href="https://github.com/roiceee" class="text-decoration-none text-warning">© roiceee@GitHub</a>
     </footer>
